@@ -1,14 +1,13 @@
 import React from "react";
 import "./card.css";
-import Pic from "../assets/image.png";
 import { MdOutlineBedroomChild } from "react-icons/md";
 import { GiBathtub } from "react-icons/gi";
 import { TbRectangle } from "react-icons/tb";
 
-const Card = () => {
+const Card = ({ image }) => {
   return (
     <article className="property-card">
-      <img src={Pic} className="property-image" />
+      <img src={image} className="property-image" />
       <div className="card-info">
         <h4 className="property-name">
           2578 Folsom Street, San Francisco, CA, 94110

@@ -1,14 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@600;800&display=swap");
 
-section {
-  margin: 10%;
-}
-
 .section-2-heading {
   font-family: "Inter", sans-serif;
   font-size: 36px;
   font-weight: 800;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .section-2-heading span {
@@ -19,6 +15,7 @@ section {
   display: grid;
   gap: 50px;
   grid-template-columns: 380px auto;
+  align-items: center;
 }
 
 .section-2-image {
@@ -41,7 +38,9 @@ section {
 
 .infoBox-text {
   font-family: "Inter", sans-serif;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 600;
+  line-height: 35px;
   margin-top: 20px;
+  white-space: break-spaces;
 }

@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600;800&display=swap");
+
+.sectionTwo {
+  margin: 0 8%;
+  display: grid;
+  gap: 1rem;
+}
+
+.sectionTwo-heading {
+  margin-top: 100px;
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.sectionTwo-heading span {
+  border-bottom: 3px solid #f4511e;
+}
+
+.sectionTwo-context {
+  display: grid;
+  grid-template-columns: 387px auto;
+  align-items: center;
+}
+
+.sectionTwo-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionTwo-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.sectionTwo-text {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+}
