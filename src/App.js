@@ -1,5 +1,21 @@
+import React from 'react';
+import './index.css';
+
+// Routing
+import { Routes, Route } from 'react-router-dom';
+
+//  components
+
+import Home from './components/Home';
+
 function App() {
-  return <div style={{ textAlign: "center" }}>Home Rentals</div>;
+  return (
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </div>
+  );
 }
 
 export default App;
