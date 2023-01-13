@@ -9,6 +9,7 @@ import Logo from '../assets/logo 1.svg';
 
 //  import icons
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+
 // Navigation component
 function NavBar() {
   const [menu, setMenu] = useState(false);
@@ -20,9 +21,9 @@ function NavBar() {
   return (
     <div className="w-full lg:mx-auto flex items-center justify-between lg:block ">
       {/* Nav menu at the left*/}
-      <div className=" lg:mx-10  pt-6  lg:px-10 flex items-center max-width-{900px] justify-between lg:border-b-2  lg:border-b-white/[0.1]">
-        <NavLink to="/" className="pb-4 block pl-10">
-          <img src={Logo} alt="home rental logo" className="w-full" />
+      <div className=" lg:mx-10  pt-4  lg:pt-6 lg:px-10 flex items-center max-width-{900px] justify-between lg:border-b-2  lg:border-b-white/[0.1]">
+        <NavLink to="/" className="pb-4 block lg:pl-10 pl-4 ml-2">
+          <img src={Logo} alt="home rental logo" className="w-5/6 lg-full" />
         </NavLink>
 
         {/* desktop menu */}
@@ -63,7 +64,7 @@ function NavBar() {
         {menu ? (
           <AiOutlineClose size={30} className="text-[#F4511E] cursor-pointer" />
         ) : (
-          <AiOutlineMenu size={20} className="text-[#F4511E] cursor-pointer" />
+          <AiOutlineMenu size={30} className="text-[#F4511E] cursor-pointer" />
         )}
       </div>
 
@@ -71,28 +72,40 @@ function NavBar() {
       <div
         className={
           menu
-            ? 'fixed top-0 left-0 flex flex-col h-full bg-[#F4511E]/100 w-[60%] text-white'
-            : ` fixed left-[-100%] `
+            ? 'fixed top-0 left-0 flex flex-col h-full bg-[#F4511E]/100 w-[60%] text-white ease-in-out duration-1000 '
+            : ` fixed left-[-100%] ease-in-out duration-500`
         }
       >
         <NavLink to="/" className=" block p-4 mb-2">
           <img
             src={Logo}
             alt="home rental logo"
-            className="w-1/3 mix-blend-luminosity"
+            className="w-1/3 mix-blend-luminosity md:w-1/2"
           />
         </NavLink>
         <ul className="pt-2 px-2 flex flex-col border-t-2">
-          <NavHashLink to="/" className="p-4 mb-2">
+          <NavHashLink
+            to="/"
+            className="p-4 mb-2 text-[18px] md:text-[30px] md:hover:text-[27px] hover:text-[16px]"
+          >
             Home
           </NavHashLink>
-          <NavHashLink to="#landlord" className="p-4 mb-2">
+          <NavHashLink
+            to="#landlord"
+            className="p-4 mb-2 text-[18px] hover:text-[16px] md:text-[30px] md:hover:text-[27px]"
+          >
             LandLord
           </NavHashLink>
-          <NavHashLink to="#tenant" className="p-4 mb-2">
+          <NavHashLink
+            to="#tenant"
+            className="p-4 mb-2 text-[18px] hover:text-[16px] md:text-[30px] md:hover:text-[27px]"
+          >
             Tenants
           </NavHashLink>
-          <NavHashLink to="#contact" className="p-4 mb-2">
+          <NavHashLink
+            to="#contact"
+            className="p-4 mb-2 text-[18px] hover:text-[16px] md:text-[30px] md:hover:text-[27px]"
+          >
             Contact Us
           </NavHashLink>
         </ul>
