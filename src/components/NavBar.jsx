@@ -73,7 +73,7 @@ function NavBar() {
         className={
           menu
             ? 'fixed top-0 left-0 flex flex-col h-full bg-[#F4511E]/100 w-[60%] text-white ease-in-out duration-1000 '
-            : ` fixed left-[-100%] ease-in-out duration-500`
+            : ` fixed left-[-100%]  top-0 ease-in-out duration-1000`
         }
       >
         <NavLink to="/" className=" block p-4 mb-2">

@@ -19,23 +19,23 @@ function Header() {
       <div className="w-full relative">
         {/* navigation components */}
         <NavBar className="mx-auto" />
-        <div className=" flex lg:mx-10 lg:px-10 flex-col pt-8">
-          <h1 className="text-white font-['Inter'] text-center lg:font-bold lg:text-[52px] text-[32px] md:text-[45px] lg:ml-10 ml-2 pl-4">
+        <div className=" flex lg:mx-10 lg:px-10 flex-col pt-8 lg:flex-row lg:justify-between lg:items-center">
+          <h1 className="text-white font-['Inter'] text-center lg:font-bold lg:text-[32px] text-[16px] uppercase tracking-[-1px] lg:max-w-[50%] lg:mr-5 lg:text-left md:pr-4 md:text-[28px] lg:ml-10 ml-2 pl-4">
             {' '}
             The most affortable place to stay in the san franciso bay area
           </h1>
-          <div className="ml-2 pl-4">
-            <img src={Map} alt="map" className="block p-0" />
-            <div>
-              <select name="type">
-                <option value="">All type</option>
+          <div className="mx-auto pl-4 flex flex-col items-center container">
+            <img src={Map} alt="map" className="block p-0 lg:w-2/3" />
+            <div className="p-2 bg-white mt-1 mb-8 rounded-md ">
+              <select name="type" className="p-3 bg-[#F9F9F9] mr-0">
+                <option value=""> All type </option>
               </select>
-              <select name="environs">
-                <option value="">Neighbourhood</option>
+              <select name="environs" className="p-3 bg-[#F9F9F9] rounded-md ">
+                <option value=""> Neighbourhood </option>
               </select>
-              <button>
+              <button className="bg-[#23A6F0] p-3 rounded-md">
                 {' '}
-                <AiOutlineSearch />{' '}
+                <AiOutlineSearch className="text-white" />{' '}
               </button>
             </div>
           </div>
