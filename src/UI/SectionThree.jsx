@@ -17,13 +17,15 @@ const SectionThree = () => {
           return <Card key={index} image={x} />;
         })}
       </div>
-      <div className="sectionThree-navigation">
-        <span id="prev">First</span>
-        <span id="1">1</span>
-        <span id="2">2</span>
-        <span id="3">3</span>
-        <span id="next">Next</span>
-      </div>
+      <table>
+        <tr className="sectionThree-navigation">
+          <td id="prev">First</td>
+          <td id="1">1</td>
+          <td id="2">2</td>
+          <td id="3">3</td>
+          <td id="next">Next</td>
+        </tr>
+      </table>
     </section>
   );
 };
