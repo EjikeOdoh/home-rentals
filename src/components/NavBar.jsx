@@ -60,7 +60,7 @@ function NavBar() {
       </div>
 
       {/* mobile menu */}
-      <div className="lg:hidden pr-4 mx-4" onClick={handleNav}>
+      <div className="lg:hidden pr-6 mx-4" onClick={handleNav}>
         {menu ? (
           <AiOutlineClose size={30} className="text-[#F4511E] cursor-pointer" />
         ) : (
