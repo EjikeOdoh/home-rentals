@@ -39,6 +39,10 @@ const sectionFour = () => {
         </div>
       </div>
       <div className="sectionFourBottom">
+        <h3 className="sectionFourBottomText">
+          Your property with us and be Confident that Your Room will be Filled
+          Out!
+        </h3>
         <form>
           <h3 className="formTitle">Add A New Property</h3>
           <div className="shortInputs">
