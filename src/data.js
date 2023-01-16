@@ -42,3 +42,14 @@ export const imageList = [
   "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
   "https://images.unsplash.com/photo-1600047508788-786f3865b4b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
 ];
+
+export const formFields = [
+  { label: "Name", placeholder: "Enter Name" },
+  { label: "Address", placeholder: "Enter Address" },
+  { label: "Unit Number", placeholder: "Enter Unit" },
+  { label: "City", placeholder: "Select City" },
+  { label: "State", placeholder: "Select State" },
+  { label: "Room Type", placeholder: "Select Room Type" },
+  { label: "Price", placeholder: "Enter Price" },
+  { label: "Room Type", placeholder: "Select Room Type" },
+];

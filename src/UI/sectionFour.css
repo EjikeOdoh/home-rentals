@@ -100,3 +100,20 @@
   border-radius: 13px;
   display: inline;
 }
+
+.formTitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  color: #f4511e;
+  text-align: center;
+}
+
+.shortInputs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}

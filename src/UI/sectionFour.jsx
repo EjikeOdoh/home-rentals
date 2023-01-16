@@ -1,4 +1,6 @@
 import React from "react";
+import Input from "../components/Input";
+import { formFields } from "../data";
 import "./sectionFour.css";
 
 const sectionFour = () => {
@@ -36,7 +38,25 @@ const sectionFour = () => {
           <button>Search Rooms</button>
         </div>
       </div>
-      <div className="sectionFourBottom"></div>
+      <div className="sectionFourBottom">
+        <form>
+          <h3 className="formTitle">Add A New Property</h3>
+          <div className="shortInputs">
+            {formFields.map((x) => {
+              return <Input label={x.label} placeholder={x.placeholder} />;
+            })}
+          </div>
+          <div>
+            <label>
+              Description <span className="required">*</span>
+              <textarea
+                className="input"
+                placeholder="Enter Description"
+              ></textarea>
+            </label>
+          </div>
+        </form>
+      </div>
     </section>
   );
 };
