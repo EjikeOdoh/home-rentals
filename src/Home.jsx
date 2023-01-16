@@ -1,4 +1,5 @@
 import React from "react";
+import Input from "./components/Input";
 import "./home.css";
 import SectionFour from "./UI/sectionFour";
 import SectionThree from "./UI/SectionThree";
@@ -11,6 +12,7 @@ const Home = () => {
       <SectionThree />
       <SectionFour />
       <section></section>
+      <Input />
     </div>
   );
 };
