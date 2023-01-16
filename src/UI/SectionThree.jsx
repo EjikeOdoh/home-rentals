@@ -18,13 +18,15 @@ const SectionThree = () => {
         })}
       </div>
       <table>
-        <tr className="sectionThree-navigation">
-          <td id="prev">First</td>
-          <td id="1">1</td>
-          <td id="2">2</td>
-          <td id="3">3</td>
-          <td id="next">Next</td>
-        </tr>
+        <tbody>
+          <tr className="sectionThree-navigation">
+            <td id="prev">First</td>
+            <td id="1">1</td>
+            <td id="2">2</td>
+            <td id="3">3</td>
+            <td id="next">Next</td>
+          </tr>
+        </tbody>
       </table>
     </section>
   );
