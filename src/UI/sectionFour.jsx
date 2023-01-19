@@ -59,6 +59,9 @@ const sectionFour = () => {
               ></textarea>
             </label>
           </div>
+          <div>
+            <input type="file" />
+          </div>
         </form>
       </div>
     </section>
