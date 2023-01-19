@@ -1,4 +1,5 @@
 import React from "react";
+import DropZone from "../components/DropZone";
 import Input from "../components/Input";
 import { formFields } from "../data";
 import "./sectionFour.css";
@@ -50,7 +51,7 @@ const sectionFour = () => {
               return <Input label={x.label} placeholder={x.placeholder} />;
             })}
           </div>
-          <div>
+          <div className="textArea">
             <label>
               Description <span className="required">*</span>
               <textarea
@@ -59,9 +60,8 @@ const sectionFour = () => {
               ></textarea>
             </label>
           </div>
-          <div>
-            <input type="file" />
-          </div>
+          <DropZone />
+          <button>Add New Property</button>
         </form>
       </div>
     </section>

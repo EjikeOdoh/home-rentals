@@ -103,6 +103,8 @@
   box-shadow: 0px 4px 63px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   padding: 60px;
+  display: grid;
+  gap: 50px;
 }
 
 .sectionFourTopText button {
@@ -123,7 +125,6 @@
   font-size: 28px;
   color: #f4511e;
   text-align: center;
-  margin-bottom: 40px;
 }
 
 .shortInputs {
@@ -131,5 +132,39 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   align-items: center;
-  margin-bottom: 20px;
+}
+
+.textArea textArea {
+  height: 150px;
+}
+
+.dropzone {
+  border: 1px dashed #f4511e;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.dropzone p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.dropzone small {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+form button {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  background-color: #f4511e;
+  width: 50%;
+  margin: auto;
+  color: white;
+  padding: 22px;
+  border-radius: 10px;
 }
