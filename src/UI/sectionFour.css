@@ -7,6 +7,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  gap: 50px;
 }
 
 .topImages {
@@ -167,4 +168,73 @@ form button {
   color: white;
   padding: 22px;
   border-radius: 10px;
+}
+
+/* MEDIA QUERY FOR TABS */
+
+@media screen and (max-width: 1024px) {
+  .sectionFour {
+    padding: 50px;
+  }
+
+  .sectionFourHeading {
+    font-size: 30px;
+  }
+
+  .sectionFourTop {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .sectionFourTopText {
+    gap: 20px;
+  }
+
+  .sectionFourBottomText {
+    font-size: 20px;
+  }
+
+  .formTitle {
+    font-size: 26px;
+  }
+
+  .shortInputs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE */
+
+@media screen and (max-width: 540px) {
+  .sectionFour {
+    padding: 50px 10px;
+  }
+  .sectionFourImages {
+    display: none;
+  }
+
+  .sectionFourTopText {
+    padding: 0;
+  }
+
+  .sectionFourHeading {
+    font-size: 26px;
+  }
+
+  .sectionFourTopText button {
+    margin: auto;
+  }
+
+  .sectionFourBottom form {
+    padding: 10px;
+  }
+
+  .shortInputs {
+    grid-template-columns: 1fr;
+  }
+
+  form button {
+    width: 100%;
+    font-size: 20px;
+  }
 }

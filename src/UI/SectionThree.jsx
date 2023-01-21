@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./sectionThree.css";
 import Card from "./Card";
 import { imageList } from "../data";
@@ -20,10 +21,34 @@ const SectionThree = () => {
       <table>
         <tbody>
           <tr className="sectionThree-navigation">
-            <td id="prev">First</td>
-            <td id="1">1</td>
-            <td id="2">2</td>
-            <td id="3">3</td>
+            <td id="prev" onClick={(e) => console.log(e.target.value)}>
+              First
+            </td>
+            <td id="one">
+              <NavLink
+                to="#one"
+                className={({ isActive }) => (isActive ? "active-nav" : "")}
+              >
+                1
+              </NavLink>
+            </td>
+
+            <td id="two">
+              <NavLink
+                to="#two"
+                className={({ isActive }) => (isActive ? "active-nav" : "")}
+              >
+                2
+              </NavLink>
+            </td>
+            <td id="three">
+              <NavLink
+                to="#three"
+                className={({ isActive }) => (isActive ? "active-nav" : "")}
+              >
+                3
+              </NavLink>
+            </td>
             <td id="next">Next</td>
           </tr>
         </tbody>
